@@ -186,9 +186,31 @@ cupcakes, how much change will you receive from a $20 bill? \
     'The cat ____ sleeping.'""",
       20: "What does the idiom 'once in a blue moon' mean?",
       21: "What does the expression 'spill the beans' mean?",
-      22: "Identify the subject in the sentence: 'The bird sang sweetly.'",
+      22: "Identify the subject in the sentence: 'The birds sang sweetly.'",
       23: "Identify the verb in the sentence: 'The birds sang sweetly.'",
-      24: "Rewrite the sentence 'The dog barked at the mailman' in the passive voice."
+      24: "Rewrite the sentence 'The dog barked at the mailman' in the passive voice.",
+      25: "What ____ when I called? (Was you doing, Was you do, Were you doing, You were doing)",
+      26: "Which word form is not correct? (Clotheful, Clothing, Clothed, Clothe)",
+      27: "Nothing ____ done when the boss is away. (Becomes, Gets, Been, Get)",
+      28: "You can use my car ____ tomorrow. (Yet, Until, Since, Around)",
+      29: "What ____ your favourite food as a child? (Will, Would, Was, Is)",
+      30: "____ you like? I like Grapes and Mango. (What thing of fruit do, What type of fruit do, How many fruit do, Types of fruit do)",
+      31: "I will talk ____ Paul when I find him. (Around, To, At, Towards)",
+      32: "____? Adolf Hitler did. (Who start World War 1, Who started the Second World War, Who cause World War 2, Who did World War 2)",
+      33: "I never have ____ such a boring book! (Saw, Red, Read, Readen)",
+      34: "Please, let me ____! (Think, Have, Make, Put)",
+      35: "What is the antonym of 'ascend'? (Descend, Climb, Increase, Elevate)",
+      36: "What is the synonym of 'elated'? (Ecstatic, Depressed, Anxious, Indifferent)",
+      37: "George's mother didn't want him to take the job on the oil rig. In fact, George didn't feel happy about it ____. (Itself, Himself, Herself, None of the above)",
+      38: "The river ____ very quickly today, much faster than usual. (Is flowing, Was flowing, Have been flowing, Flew)",
+      39: "You're looking very ____ with yourself! Have you won soem money? (Afraid, Angry, Concerned, Pleased, Sorry)",
+      40: "I learnt English in school, but I ____ most of it. (Forgotten, Forgot, Have forgotten, Forgotted)",
+      41: "Call me after eight o'clock, we ____ dinner by then. (Finished, Finishing, Will have finished, Ate)",
+      42: "They didn't want to come with us at first, but we ____ persuade them. (Able to, Were, Were able to, Could)",
+      43: "I'm busy right now, but I'll be with you ____ a moment. (On, At, In, Before, By)",
+      44: "House prices are very high. They've ____ a lot in the last few years. (Going up, Will have gone up, Going to go up, Will go up, Gone up)",
+      45: "There was so much traffic, I was lucky to get ____ the road without being knocked over. (Across, Over, Along, Through)",
+      46: "It ____(cost) us a fortune at the moment to send our daughter to dance classes.",
   }
   english_answer = {
       1: "went",
@@ -214,7 +236,29 @@ cupcakes, how much change will you receive from a $20 bill? \
       21: "reveal a secret",
       22: "Birds",
       23: "Sang",
-      24: "The mailman was barked at by the dog"
+      24: "The mailman was barked at by the dog",
+      25: "Were you doing",
+      26: "Clotheful",
+      27: "gets",
+      28: "until",
+      29: "was",
+      30: "What type of fruit do",
+      31: "to",
+      32: "Who started the Second World War",
+      33: "Read",
+      34: "Think",
+      35: "Descend",
+      36: "Ecstatic",
+      37: "Himself",
+      38: "Is flowing",
+      39: "Pleased",
+      40: "Have forgotten",
+      41: "Will have finished",
+      42: "Were able to",
+      43: "In",
+      44: "Gone up",
+      45: "Across",
+      46: "Is costing"
   }
 
   # Function: Clearing Screen
@@ -476,7 +520,7 @@ C) Math Conversion to Computer Text''')
   # Function: English
   def english():
     nonlocal current_points, required_points
-    number = random.randint(1,24)
+    number = random.randint(1,46)
     if int(current_points) != -20:
       bold(f'{Fore.BLUE}{english_ascii}{Fore.WHITE}')
       print(' ')
