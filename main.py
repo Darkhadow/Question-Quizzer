@@ -137,7 +137,8 @@ If you buy 3 apples and 5 oranges, how much will you spend in total? \
       "A bakery sells cupcakes for $2.50 each. If you buy 6 \
 cupcakes, how much change will you receive from a $20 bill? \
 (Give answer with units)",
-      20: "What is the square root of 1296? (Give answer in 3 S.F.)"
+      20: "What is the square root of 1296? (Give answer in 3 S.F.)",
+      21: "What is 40 over 2 times 2?"
   }
   math_answer = {
       1: "a^2 + b^2 = c^2",
@@ -157,9 +158,10 @@ cupcakes, how much change will you receive from a $20 bill? \
       15: "66.5",
       16: "12",
       17: "96 meters",
-      18: "$9.75",
+      18: "$8.25",
       19: "$5.00",
-      20: "36.0"
+      20: "36.0",
+      21: "40"
   }
   english_question = {
       1: "What is the past tense of 'go'?",
@@ -528,7 +530,7 @@ C) Math Conversion to Computer Text''')
     print(f'{Fore.YELLOW}Required Points: {required_points}{Fore.WHITE}')
     print(dash)
     print(english_question[number])
-    answer = str(input(f'{Fore.BLUE}Answer: {Fore.WHITE}'))
+    answer = str(input(f'{Fore.BLUE}Answer: {Fore.WHITE}')).upper()
 
     if answer.upper() == english_answer[number].upper():
       bold(f'{Fore.GREEN}{correct_ascii}{Fore.WHITE}')
