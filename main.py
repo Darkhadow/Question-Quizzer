@@ -1,26 +1,22 @@
 # Importing
 import random
-import os
-from colorama import Fore
-import re
-import time
 import sys
-from replit import db
+import time
+
+# Importing From
+from colorama import Fore
+
 
 # Function: Clear Screen
 def Clear_Screen():
   print("\033c", end="", flush=True)
-
 
 # Function: Main
 def main():
   # Assigning Variabes
   start = 'Y'
   topic = ''
-  answer = ''
-  number = 0
   dash = '-' * 48
-  go_on = 'N'
   game_over_ascii = '''---------------------------------------------
 |   ______      ___      _        _ ______  |
 |  / _____|    / _ \\    |  \\    /  |  ____| |
@@ -431,8 +427,7 @@ cupcakes, how much change will you receive from a $20 bill? \
 
   # Function: Topic Menu
   def Topic_Menu():
-    bold(f'{Fore.BLUE}{welcome_ascii}{Fore.WHITE}')
-    print(' ')
+    bold(f'{Fore.BLUE}{welcome_ascii}{Fore.WHITE}\n')
     underline("Topics Avalible:")
     print('''
 1) Math
